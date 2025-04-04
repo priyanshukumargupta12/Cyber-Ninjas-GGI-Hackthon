@@ -1,0 +1,1427 @@
+{
+    "analyzed_file": "app/uploads/InsecureBankv2.apk",
+    "scan_time": "2025-04-05 00:56:51",
+    "findings": {
+        "api_keys": [
+            {
+                "file": "smali/com/google/android/gms/internal/zzat.smali",
+                "key_type": "Facebook API Key",
+                "value": "FBZJdsitUyhRI4JzU4vhiBTsBWTO6ZWa6ASNZxDQQdxLr",
+                "context": "fyTODbDHntVaToxbbuypFBZJdsitUyhRI4JzU4vhiBTsBWTO6ZWa6ASNZxDQQdxLr+xnF3TfHiW4x/j44wqPt",
+                "line": 49
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzat.smali",
+                "key_type": "Facebook API Key",
+                "value": "fbdk7mfwZ5yvzm3uEnRne7MRRqeivHtRPG4HnR8i584lfRGgs3kXx",
+                "context": "mla2IAZzhaGzoAF0Og6Nfbdk7mfwZ5yvzm3uEnRne7MRRqeivHtRPG4HnR8i584lfRGgs3kXx/lpfl5/BJrDO/TFrPE9G",
+                "line": 49
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzat.smali",
+                "key_type": "Facebook API Key",
+                "value": "fb3zMgSkltcUlAE0zj8Zj0CHh7v4W1djTbQ0guREeOfhkUJF8r6UZLuHxNAjkMSVG5",
+                "context": "WHUTxCChDeYopvE8rIGGfb3zMgSkltcUlAE0zj8Zj0CHh7v4W1djTbQ0guREeOfhkUJF8r6UZLuHxNAjkMSVG5/Oz2id9jw/w1j+rMQN7w",
+                "line": 49
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzat.smali",
+                "key_type": "Facebook API Key",
+                "value": "fBsJlRkdrWU7JAHSYqezu9zpzEjgHLzHgzFa",
+                "context": "KQTrtCmCkg970uKkr2gCfBsJlRkdrWU7JAHSYqezu9zpzEjgHLzHgzFa+n2/OQEXLwg7azoA+Giu",
+                "line": 49
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzat.smali",
+                "key_type": "Facebook API Key",
+                "value": "FBrt2JDYu9VIuAHdYuT1VPLHst51ZSG89jehZq7ujXyH",
+                "context": "AK+A2I0KMMcK37UYcOExFBrt2JDYu9VIuAHdYuT1VPLHst51ZSG89jehZq7ujXyH\"      return-object",
+                "line": 121
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/ChangePassword.smali",
+                "key_type": "Password",
+                "value": "\n\n    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;\n\n    move-result-object v2\n\n    iget-object v3, p0, Lcom/android/insecurebankv2/ChangePassword;->uname:Ljava/lang/String;\n\n    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;\n\n    move-result-object v2\n\n    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;\n\n    move-result-object v2\n\n    invoke-virtual {v1, v2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V\n\n    .line 87\n    const v1, 0x7f0d0066\n\n    invoke-virtual {p0, v1}, Lcom/android/insecurebankv2/ChangePassword;->findViewById(I)Landroid/view/View;\n\n    move-result-object v1\n\n    check-cast v1, Landroid/widget/TextView;\n\n    iput-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->textView_Username:Landroid/widget/TextView;\n\n    .line 88\n    iget-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->textView_Username:Landroid/widget/TextView;\n\n    iget-object v2, p0, Lcom/android/insecurebankv2/ChangePassword;->uname:Ljava/lang/String;\n\n    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V\n\n    .line 91\n    const v1, 0x7f0d0068\n\n    invoke-virtual {p0, v1}, Lcom/android/insecurebankv2/ChangePassword;->findViewById(I)Landroid/view/View;\n\n    move-result-object v1\n\n    check-cast v1, Landroid/widget/Button;\n\n    iput-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->changePassword_button:Landroid/widget/Button;\n\n    .line 92\n    iget-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->changePassword_button:Landroid/widget/Button;\n\n    new-instance v2, Lcom/android/insecurebankv2/ChangePassword$1;\n\n    invoke-direct {v2, p0}, Lcom/android/insecurebankv2/ChangePassword$1;-><init>(Lcom/android/insecurebankv2/ChangePassword;)V\n\n    invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V\n\n    .line 100\n    return-void\n.end method\n\n.method public onCreateOptionsMenu(Landroid/view/Menu;)Z\n    .locals 2\n    .param p1, ",
+                "context": "onst-string v3, \"newpassword=\"      invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;      move-result-object v2      iget-object v3, p0, Lcom/android/insecurebankv2/ChangePassword;->uname:Ljava/lang/String;      invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;      move-result-object v2      invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;      move-result-object v2      invoke-virtual {v1, v2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V      .line 87     const v1, 0x7f0d0066      invoke-virtual {p0, v1}, Lcom/android/insecurebankv2/ChangePassword;->findViewById(I)Landroid/view/View;      move-result-object v1      check-cast v1, Landroid/widget/TextView;      iput-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->textView_Username:Landroid/widget/TextView;      .line 88     iget-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->textView_Username:Landroid/widget/TextView;      iget-object v2, p0, Lcom/android/insecurebankv2/ChangePassword;->uname:Ljava/lang/String;      invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V      .line 91     const v1, 0x7f0d0068      invoke-virtual {p0, v1}, Lcom/android/insecurebankv2/ChangePassword;->findViewById(I)Landroid/view/View;      move-result-object v1      check-cast v1, Landroid/widget/Button;      iput-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->changePassword_button:Landroid/widget/Button;      .line 92     iget-object v1, p0, Lcom/android/insecurebankv2/ChangePassword;->changePassword_button:Landroid/widget/Button;      new-instance v2, Lcom/android/insecurebankv2/ChangePassword$1;      invoke-direct {v2, p0}, Lcom/android/insecurebankv2/ChangePassword$1;-><init>(Lcom/android/insecurebankv2/ChangePassword;)V      invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V      .line 100     return-void .end method  .method public onCreateOptionsMenu(Landroid/view/Menu;)Z     .locals 2     .param p1, \"menu\"    # Landroid/",
+                "line": 288
+            }
+        ],
+        "exported_activities": [
+            {
+                "type": "activity",
+                "name": "com.android.insecurebankv2.LoginActivity",
+                "has_permission": false,
+                "permission": null,
+                "explicitly_exported": false,
+                "has_intent_filter": true,
+                "intent_actions": [
+                    "android.intent.action.MAIN"
+                ]
+            },
+            {
+                "type": "activity",
+                "name": "com.android.insecurebankv2.PostLogin",
+                "has_permission": false,
+                "permission": null,
+                "explicitly_exported": true,
+                "has_intent_filter": false,
+                "intent_actions": []
+            },
+            {
+                "type": "activity",
+                "name": "com.android.insecurebankv2.DoTransfer",
+                "has_permission": false,
+                "permission": null,
+                "explicitly_exported": true,
+                "has_intent_filter": false,
+                "intent_actions": []
+            },
+            {
+                "type": "activity",
+                "name": "com.android.insecurebankv2.ViewStatement",
+                "has_permission": false,
+                "permission": null,
+                "explicitly_exported": true,
+                "has_intent_filter": false,
+                "intent_actions": []
+            },
+            {
+                "type": "activity",
+                "name": "com.android.insecurebankv2.ChangePassword",
+                "has_permission": false,
+                "permission": null,
+                "explicitly_exported": true,
+                "has_intent_filter": false,
+                "intent_actions": []
+            },
+            {
+                "type": "receiver",
+                "name": "com.android.insecurebankv2.MyBroadCastReceiver",
+                "has_permission": false,
+                "permission": null,
+                "explicitly_exported": true,
+                "has_intent_filter": true,
+                "intent_actions": [
+                    "theBroadcast"
+                ]
+            },
+            {
+                "type": "provider",
+                "name": "com.android.insecurebankv2.TrackUserContentProvider",
+                "has_permission": false,
+                "permission": null,
+                "explicitly_exported": true,
+                "has_intent_filter": false,
+                "intent_actions": []
+            }
+        ],
+        "webview_issues": [
+            {
+                "file": "smali/com/google/android/gms/internal/zzig.smali",
+                "line": 200,
+                "issue": "JavaScript interface added to WebView",
+                "severity": "MEDIUM",
+                "code": "addJavascriptInterface(",
+                "context": "gms/internal/zzig;->addJavascriptInterface(Ljava/lang/Object;Lj"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzig.smali",
+                "line": 674,
+                "issue": "Loading data in WebView",
+                "severity": "LOW",
+                "code": "loadData(",
+                "context": "hod  .method public loadData(Ljava/lang/String;Lj"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzig.smali",
+                "line": 692,
+                "issue": "Loading data in WebView",
+                "severity": "LOW",
+                "code": "loadData(",
+                "context": "id/webkit/WebView;->loadData(Ljava/lang/String;Lj"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzid.smali",
+                "line": 41,
+                "issue": "Loading data in WebView",
+                "severity": "LOW",
+                "code": "loadData(",
+                "context": "hod public abstract loadData(Ljava/lang/String;Lj"
+            }
+        ],
+        "other_issues": [
+            {
+                "file": "smali/com/google/android/gms/games/Games.smali",
+                "line": 122,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/games/Games.smali",
+                "line": 148,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/games/internal/GamesClientImpl.smali",
+                "line": 667,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/games/internal/GamesClientImpl.smali",
+                "line": 673,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/games/internal/GamesClientImpl.smali",
+                "line": 742,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v5, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/games/internal/GamesClientImpl.smali",
+                "line": 746,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v2, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/games/internal/GamesClientImpl.smali",
+                "line": 765,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v4, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/plus/Plus.smali",
+                "line": 98,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/plus/Plus.smali",
+                "line": 106,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/plus/PlusOneButton.smali",
+                "line": 109,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v0, \"http://schemas.android.com/"
+            },
+            {
+                "file": "smali/com/google/android/gms/plus/PlusOneButton.smali",
+                "line": 161,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v0, \"http://schemas.android.com/"
+            },
+            {
+                "file": "smali/com/google/android/gms/appstate/AppStateManager.smali",
+                "line": 81,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/Tracker.smali",
+                "line": 1166,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v2, \"http://hostname/?\"      inv"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj$zza.smali",
+                "line": 150,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj$zza.smali",
+                "line": 614,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj$zza.smali",
+                "line": 627,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj$zza.smali",
+                "line": 461,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "hods .method public getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj$zza.smali",
+                "line": 488,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj$zza.smali",
+                "line": 533,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 222,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 297,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 625,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 672,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 681,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "end method  .method getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 687,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/internal/zzj$zza;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 734,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 794,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1096,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1250,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1444,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1537,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1557,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1599,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1696,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 1866,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzj.smali",
+                "line": 2111,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "tics/internal/zzj;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzy.smali",
+                "line": 662,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v1, \"http://www.google-analytics"
+            },
+            {
+                "file": "smali/com/google/android/gms/analytics/internal/zzy.smali",
+                "line": 672,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://ssl.google-analytics"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzax.smali",
+                "line": 66,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v1, \"http://hostname/?\"      inv"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzw$zza.smali",
+                "line": 373,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzw$zza.smali",
+                "line": 278,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "hods .method public getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzw$zza.smali",
+                "line": 284,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzw$zza.smali",
+                "line": 293,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzw.smali",
+                "line": 725,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "agmanager/zzw$zza;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzs.smali",
+                "line": 15,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.googletagmanager"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzby.smali",
+                "line": 280,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "gmanager/zzby$zzb;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzby$zzb.smali",
+                "line": 438,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzby$zzb.smali",
+                "line": 286,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "hods .method public getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzby$zzb.smali",
+                "line": 341,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/tagmanager/zzby$zzb.smali",
+                "line": 350,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 11,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 23,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 34,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 46,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 55,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 67,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 76,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/zza.smali",
+                "line": 88,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 414,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 422,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 430,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 438,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 446,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 454,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 462,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/fitness/Fitness.smali",
+                "line": 470,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 15,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/ActiveAct"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 17,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/Completed"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 19,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/FailedAct"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 21,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/ActivateA"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 23,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/AddAction"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 25,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/BookmarkA"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 27,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/Communica"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 29,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/FilmActio"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 31,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/LikeActio"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 33,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/ListenAct"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 35,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/Photograp"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 37,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/ReserveAc"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 39,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/SearchAct"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 41,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/ViewActio"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 43,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/WantActio"
+            },
+            {
+                "file": "smali/com/google/android/gms/appindexing/Action.smali",
+                "line": 45,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "java/lang/String; = \"http://schema.org/WatchActi"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh.smali",
+                "line": 156,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "rnal/purchase/zzh;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh.smali",
+                "line": 277,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "hod  .method public getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh.smali",
+                "line": 283,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "/purchase/zzh$zza;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh.smali",
+                "line": 354,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "rnal/purchase/zzh;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh.smali",
+                "line": 428,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "rnal/purchase/zzh;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh.smali",
+                "line": 546,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "rnal/purchase/zzh;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh.smali",
+                "line": 712,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "rnal/purchase/zzh;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh$zza.smali",
+                "line": 46,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/google/android/gms/ads/internal/purchase/zzh$zza.smali",
+                "line": 90,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 6,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 8,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 10,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 12,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 14,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 16,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 18,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 20,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 22,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 24,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 26,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 28,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 30,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 32,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 34,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/Scopes.smali",
+                "line": 36,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/common/internal/zzm.smali",
+                "line": 15,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v0, \"http://plus.google.com/\""
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzcb.smali",
+                "line": 122,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzjb.smali",
+                "line": 105,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzjb.smali",
+                "line": 121,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v4, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzgk$zza.smali",
+                "line": 109,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v0, \"http://www.google.com\""
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzbq.smali",
+                "line": 34,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageState()Ljava/lang/St"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzbz.smali",
+                "line": 560,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://googleads.g.doublecl"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzbz.smali",
+                "line": 740,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://googleads.g.doublecl"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzbz.smali",
+                "line": 750,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://googleads.g.doublecl"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzbz.smali",
+                "line": 760,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://googleads.g.doublecl"
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzbz.smali",
+                "line": 792,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://csi.gstatic.com/csi\""
+            },
+            {
+                "file": "smali/com/google/android/gms/internal/zzqi.smali",
+                "line": 15,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.google-analytics"
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 6,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.facebook.com\"  ."
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 8,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://accounts.google.com\""
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 10,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.linkedin.com\"  ."
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 12,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://login.live.com\"  .fi"
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 14,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://www.paypal.com\"  .fi"
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 16,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://twitter.com\"  .field"
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 18,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "java/lang/String; = \"https://login.yahoo.com\"   #"
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 49,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://accounts.google.com\""
+            },
+            {
+                "file": "smali/com/google/android/gms/auth/api/credentials/IdentityProviders.smali",
+                "line": 65,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v0, \"https://www.facebook.com\""
+            },
+            {
+                "file": "smali/com/google/android/gms/drive/Drive.smali",
+                "line": 79,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/drive/Drive.smali",
+                "line": 87,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/drive/Drive.smali",
+                "line": 95,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/google/android/gms/drive/Drive.smali",
+                "line": 103,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"https://",
+                "context": "const-string v1, \"https://www.googleapis.com/a"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/DoLogin.smali",
+                "line": 68,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v0, \"http://\"      iput-object v"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/DoTransfer.smali",
+                "line": 87,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v0, \"http://\"      iput-object v"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/DoTransfer$RequestDoTransferTask$1.smali",
+                "line": 359,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/DoTransfer$RequestDoTransferTask$1.smali",
+                "line": 655,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/ChangePassword.smali",
+                "line": 63,
+                "issue": "Hardcoded URLs - check for HTTP usage",
+                "severity": "LOW",
+                "code": "\"http://",
+                "context": "const-string v0, \"http://\"      iput-object v"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/ViewStatement.smali",
+                "line": 103,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/ViewStatement.smali",
+                "line": 147,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/TrackUserContentProvider.smali",
+                "line": 296,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "SQLException",
+                "context": ", Landroid/database/SQLException;      new-instance"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/TrackUserContentProvider.smali",
+                "line": 316,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "SQLException",
+                "context": ", Landroid/database/SQLException;-><init>(Ljava/lang"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/TrackUserContentProvider.smali",
+                "line": 338,
+                "issue": "Database access - check for encryption",
+                "severity": "LOW",
+                "code": "getWritableDatabase",
+                "context": "er$DatabaseHelper;->getWritableDatabase()Landroid/database/"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/TrackUserContentProvider$DatabaseHelper.smali",
+                "line": 46,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/com/android/insecurebankv2/TrackUserContentProvider$DatabaseHelper.smali",
+                "line": 62,
+                "issue": "SQL usage - check for SQL injection",
+                "severity": "MEDIUM",
+                "code": "execSQL",
+                "context": "te/SQLiteDatabase;->execSQL(Ljava/lang/String;)"
+            },
+            {
+                "file": "smali/android/support/v4/content/ContextCompat.smali",
+                "line": 283,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/android/support/v4/content/ContextCompat.smali",
+                "line": 372,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/android/support/v4/content/ContextCompat.smali",
+                "line": 464,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/android/support/v4/content/FileProvider.smali",
+                "line": 642,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/android/support/v4/os/EnvironmentCompat.smali",
+                "line": 55,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageDirectory()Ljava/io/"
+            },
+            {
+                "file": "smali/android/support/v4/os/EnvironmentCompat.smali",
+                "line": 72,
+                "issue": "Using external storage without proper checks",
+                "severity": "MEDIUM",
+                "code": "getExternalStorage",
+                "context": "id/os/Environment;->getExternalStorageState()Ljava/lang/St"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Backup enabled",
+                "severity": "MEDIUM",
+                "code": "android:allowBackup=\"true\"",
+                "context": "Application data can be backed up and potentially accessed by other apps"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "App is debuggable",
+                "severity": "HIGH",
+                "code": "android:debuggable=\"true\"",
+                "context": "Debuggable apps expose sensitive information and can be easily reverse engineered"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Uses sensitive permission: INTERNET",
+                "severity": "MEDIUM",
+                "code": "uses-permission android:name=\"android.permission.INTERNET\"",
+                "context": "App requests INTERNET permission which may expose sensitive user data if misused"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Uses sensitive permission: READ_EXTERNAL_STORAGE",
+                "severity": "MEDIUM",
+                "code": "uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"",
+                "context": "App requests READ_EXTERNAL_STORAGE permission which may expose sensitive user data if misused"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Uses sensitive permission: WRITE_EXTERNAL_STORAGE",
+                "severity": "MEDIUM",
+                "code": "uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"",
+                "context": "App requests WRITE_EXTERNAL_STORAGE permission which may expose sensitive user data if misused"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Uses sensitive permission: ACCESS_COARSE_LOCATION",
+                "severity": "MEDIUM",
+                "code": "uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"",
+                "context": "App requests ACCESS_COARSE_LOCATION permission which may expose sensitive user data if misused"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Uses sensitive permission: READ_CONTACTS",
+                "severity": "HIGH",
+                "code": "uses-permission android:name=\"android.permission.READ_CONTACTS\"",
+                "context": "App requests READ_CONTACTS permission which may expose sensitive user data if misused"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Uses sensitive permission: READ_CALL_LOG",
+                "severity": "MEDIUM",
+                "code": "uses-permission android:name=\"android.permission.READ_CALL_LOG\"",
+                "context": "App requests READ_CALL_LOG permission which may expose sensitive user data if misused"
+            },
+            {
+                "file": "AndroidManifest.xml",
+                "line": 0,
+                "issue": "Uses sensitive permission: READ_PHONE_STATE",
+                "severity": "MEDIUM",
+                "code": "uses-permission android:name=\"android.permission.READ_PHONE_STATE\"",
+                "context": "App requests READ_PHONE_STATE permission which may expose sensitive user data if misused"
+            }
+        ]
+    }
+}
